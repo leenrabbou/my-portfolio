@@ -1,51 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leen Rabbou | Portfolio</title>
+    <title>Leen Rabbou | Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="header-container">
         <div class="logo-area">
-          <img src="assets/female22.png" alt="Logo" class="logo-img" />
-          <span class="brand-name">Portfolio</span>
+          <div class="logo-dot"></div>
+          <span class="brand-name">LEEN.DEV</span>
         </div>
         <nav class="nav-menu">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Work</a>
           <a href="#contact">Contact</a>
         </nav>
-        <div class="header-cta">
-          <button class="btn-hire">Hire Me</button>
-        </div>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Hi, I'm <span>Leen Rabbou</span></h1>
+        <div class="hero-label">Software Engineering Graduate</div>
+        <h1 class="hero-title">
+          Building Scalable <span>Mobile Solutions</span>
+        </h1>
         <p class="hero-subtitle">
-          Final-year Software Engineering student at Damascus University.
-          Specializing in building high-performance mobile and web apps using
-          <strong>Flutter</strong>.
+          Specialized in Flutter development with a deep focus on Clean
+          Architecture, high-performance state management, and intuitive user
+          experiences.
         </p>
-        <div class="hero-badge">
-          <i class="fas fa-trophy"></i>
-          <span>Solved +300 algorithmic challenges on Codeforces</span>
-        </div>
         <div class="hero-actions">
-          <button class="btn-main" onclick="location.href='#projects'">
-            Explore My Work
+          <button class="btn-main" onclick="location.href = '#projects'">
+            Explore Projects
           </button>
           <a
             href="https://github.com/leenrabbou"
             target="_blank"
             class="btn-outline"
-            >GitHub</a
+            ><i class="fab fa-github"></i> GitHub</a
           >
         </div>
       </div>
@@ -53,84 +53,122 @@
 
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">Professional Bio</h2>
         <p class="section-text">
-          I am focused on creating intuitive, accessible, and visually
-          comfortable interfaces. With a strong background in Dart, Java, and
-          C++, I aim to build innovative solutions in healthcare and educational
-          technology.
+          Software Engineer specialized in building mobile applications with
+          Flutter. I focus on writing clean, maintainable code using Clean
+          Architecture and MVVM. My goal is to deliver high-performance apps
+          with a smooth user experience and solid API integration.
         </p>
-      </div>
-    </section>
-
-    <section id="skills" class="section alt-bg">
-      <div class="container">
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="skills-grid">
-          <div class="skill-box">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Programming</h3>
-            <p>Dart (Advanced), Java (Advanced), C++ (Advanced).</p>
-          </div>
-          <div class="skill-box">
-            <i class="fas fa-mobile-screen-button"></i>
-            <h3>Development</h3>
-            <p>Flutter, Provider, Responsive Design, State Management.</p>
-          </div>
-          <div class="skill-box">
-            <i class="fas fa-bezier-curve"></i>
-            <h3>Design</h3>
-            <p>UI/UX, Accessibility, Color Theory.</p>
-          </div>
-        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-container">
-          <div class="project-item">
-            <div class="project-header">
-              <h3>Pharmacy App</h3>
-              <span class="project-tag">Mobile</span>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <a
+            class="project-card"
+            href="https://github.com/leenrabbou/Dentila-Clinic-System"
+            target="_blank"
+          >
+            <div class="project-type">Healthcare System</div>
+            <h3>Dentila – Dental Clinic App</h3>
+            <p>
+              Tablet system for managing dental charts, treatments, and clinical
+              workflow.
+            </p>
+
+            <div class="project-stack">
+              <span>Flutter</span>
+              <span>Provider</span>
+              <span>Tablet UI</span>
             </div>
-            <p>Search drugs, view details, and place pharmacy orders.</p>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://github.com/leenrabbou/Invenstore-WMS"
+            target="_blank"
+          >
+            <div class="project-type">Enterprise System</div>
+            <h3>Invenstore – Warehouse Management</h3>
+            <p>
+              Inventory system with real-time tracking and multi-warehouse
+              operations.
+            </p>
+
+            <div class="project-stack">
+              <span>Flutter</span>
+              <span>Laravel</span>
+              <span>REST API</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://github.com/leenrabbou/GovComplaints-Mobile"
+            target="_blank"
+          >
+            <div class="project-type">Government System</div>
+            <h3>GovComplaints System</h3>
+            <p>
+              Complaint tracking system with OTP login, real-time updates, and
+              audit trail.
+            </p>
+
+            <div class="project-stack">
+              <span>Flutter</span>
+              <span>MVVM</span>
+              <span>Pusher</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-layer-group"></i>
+            <h4>Architecture & Logic</h4>
+            <p>Clean Architecture, MVVM, 3-Layer Pattern, Design Patterns.</p>
           </div>
-          <div class="project-item">
-            <div class="project-header">
-              <h3>Warehouse Management</h3>
-              <span class="project-tag">Web & Mobile</span>
-            </div>
-            <p>Manage inventory and warehouse orders efficiently.</p>
+          <div class="skill-item">
+            <i class="fas fa-bolt"></i>
+            <h4>Performance</h4>
+            <p>
+              State Management (Provider), Dio Interceptors, Caching Strategies.
+            </p>
           </div>
-          <div class="project-item">
-            <div class="project-header">
-              <h3>Dental Clinic App</h3>
-              <span class="project-tag">Tablet</span>
-            </div>
-            <p>Treatment plans, schedules, and dental charts management.</p>
+          <div class="skill-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Security</h4>
+            <p>OTP Authentication, Secure Storage, Input Validation.</p>
           </div>
         </div>
       </div>
     </section>
 
     <footer id="contact">
-      <div class="container footer-content">
+      <div class="container">
         <h2>Let's Connect</h2>
-        <div class="contact-links">
+
+        <div class="contact-details">
           <p><i class="fas fa-envelope"></i> leen.rabbou@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +963 933 576 222</p>
-          <p><i class="fas fa-location-dot"></i> Damascus, Syria</p>
+          <p><i class="fas fa-map-marker-alt"></i> Syria, Damascus</p>
         </div>
-        <div class="footer-socials">
-          <a
-            href="https://www.linkedin.com/in/leen-rabbou-ba3a0a279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://github.com/leenrabbou" target="_blank">GitHub</a>
+
+        <div class="social-icons">
+          <a href="https://github.com/leenrabbou"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
         </div>
+
+        <p class="copyright">© 2026 Leen Rabbou</p>
       </div>
     </footer>
   </body>
